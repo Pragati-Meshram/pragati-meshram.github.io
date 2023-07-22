@@ -52,13 +52,13 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         
 
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
+<!--       <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="two" id='db3d_image'>
-              <!-- <video  width=100% height=100% muted autoplay loop>
+              <video  width=100% height=100% muted autoplay loop>
             <source src="images/owl.mp4" type="video/mp4">
             Your browser does not support the video tag.
-            </video></div> -->
+            </video></div>
             <img src='images/owl.png' width="160">
           </div>
           <script type="text/javascript">
@@ -90,10 +90,27 @@
           Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
           </p>
         </td>
-      </tr>
+      </tr> -->
+
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="img/domain.png" alt="clean-usnob" width="160" height="160">
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123710732.pdf">
+                    <span class="papertitle">Multi-Source Open-Set Deep Adversarial Domain Adaptation</span>
+                </a>
+                <br>
+                <p>Sayan Rakshit, Dipesh Tamboli, <strong>Pragati Meshram</strong>, Biplab Banerjee, Gemma Roig, Subhasis Chaudhuri</p><br>
+                <em>ECCV</em>, 2020
+                <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
+                <p><a href="https://arxiv.org/abs/2304.06706">arXiv</a></p>
+              </td>
+            </tr>
       
       
-      <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+ <!--      <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
@@ -131,10 +148,10 @@
           <p>Combining DreamBooth (personalized text-to-image) and DreamFusion (text-to-3D) yields high-quality, subject-specific 3D assets with text-driven modifications</p>
         </td>
       </tr>
-
+ -->
       
 
-      <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+ <!--      <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='bakedsdf_image'><video  width=100% height=100% muted autoplay loop>
@@ -180,10 +197,10 @@
           We use SDFs to bake a NeRF-like model into a high quality mesh and do real-time view synthesis.
           </p>
         </td>
-      </tr>
+      </tr> -->
 
 
-      <tr onmouseout="merf_stop()" onmouseover="merf_start()">
+      <!-- <tr onmouseout="merf_stop()" onmouseover="merf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='merf_image'><video  width=100% height=100% muted autoplay loop>
@@ -229,9 +246,9 @@
           We use volumetric rendering with a sparse 3D feature grid and 2D feature planes to do real-time view synthesis.
           </p>
         </td>
-      </tr>
+      </tr> -->
 
-
+<!-- 
       <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
@@ -277,9 +294,9 @@
           </p>
         </td>
       </tr>
-    
+     -->
 
-      <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
+    <!--   <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='alignerf_image'>
@@ -320,9 +337,9 @@
           Accounting for misalignment due to scene motion or calibration errors improves NeRF reconstruction quality.
           </p>
         </td>
-      </tr>
+      </tr> -->
       
-  <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
+ <!--  <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
     <td style="padding:20px;width:25%;vertical-align:middle">
       <div class="one">
         <div class="two" id='dreamfusion_image'><video  width=100% height=100% muted autoplay loop>
@@ -365,8 +382,8 @@
       </p>
     </td>
   </tr>
-
-  <tr onmouseout="guandao_stop()" onmouseover="guandao_start()">
+ -->
+  <!-- <tr onmouseout="guandao_stop()" onmouseover="guandao_start()">
   <td style="padding:20px;width:25%;vertical-align:middle">
     <div class="one">
       <div class="two" id='guandao_image'>
@@ -401,8 +418,8 @@
       Training a diffusion model on grid-based NeRFs lets you (conditionally) sample NeRFs.
     </p>
   </td>
-  </tr>
-
+  </tr> -->
+<!-- 
             <tr onmouseout="mira_stop()" onmouseover="mira_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -441,7 +458,7 @@
                   NeRF lets us synthesize novel orthographic views that work well with pixel-wise algorithms for robotic manipulation.
                 </p>
               </td>
-            </tr>		
+            </tr>		 -->
             
             <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
