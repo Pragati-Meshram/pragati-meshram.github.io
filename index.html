@@ -65,7 +65,7 @@
                 <p>Sayan Rakshit, Dipesh Tamboli, <strong>Pragati Meshram</strong>, Biplab Banerjee, Gemma Roig, Subhasis Chaudhuri</p><br>
                 <em>ECCV</em>, 2020
                 <br>
-                <p>Introduced a novel learning paradigm of multi-source openset unsupervised domain adaptation (MS-OSDA). Recently, the notion of single-source open-set domain adaptation (SS-OSDA) which considers the presence of previously unseen open-set (unknown) classes in the target-domain in addition to the source-domain closed-set (known) classes has drawn attention. We proposed a novel adversarial learning driven approach to deal with MS-OSDA. Precisely, we modeled a shared feature space for all the domains which explicitly mitigates the domain gap among the source-domains. The adversarial learning strategy is introduced to align the known-class samples from the target-domain with the source data while making the unknown-classes more separable. We validate our method on the Office-31, Office-Home, Office-CalTech, and Digits datasets and find that the proposed model consistently outperforms the baseline and benchmark SS-OSDA approaches.</p>
+                <p>We proposed a novel adversarial learning driven approach to deal with Multi Source Open-set Domain Adaptation. Modeled a shared feature space for all the domains which explicitly mitigates the domain gap among the source-domains. The adversarial learning strategy is introduced to align the known-class samples from the target-domain with the source data while making the unknown-classes more separable.</p>
               </td>
             </tr>
 
@@ -83,7 +83,7 @@
                 <p>Nikhil Cherian Kurian, <strong>Pragati Meshram</strong>, Abhijeet Patil, Sunil Ptel, Amit Sethi</p><br>
                 <em>ISBI</em>, 2021
                 <br>
-                <p>The accuracy of deep learning classifiers trained using the cross entropy loss function suffers even when a fraction of training labels are wrong or input images are uninformative. Training images and labels for computational pathology are often noisy due to the difficulty in signal localization and certain disease classifications being subjective discretization of the underlying continuums of disease conditions. For training classifiers robust to input and label noise, we propose a modified and sample-specific version of generalized cross entropy loss. We take advantage of the bootstrapping properties in deep learning models in order to design loss functions that are aware of the difficulty of classifying individual samples, due to either the label noise or the lack of a strong visual signal. We carry out extensive experiments to validate our approach by comparing against the models trained using other loss functions. The superior performance of our methodology in all the experiments support the requirement of using robust loss functions for histology image classification.</p>
+                <p>For training classifiers robust to input and label noise, we proposed a modified and sample-specific version of generalized cross entropy loss. Took advantage of the bootstrapping properties in deep learning models in order to design loss functions that are aware of the difficulty of classifying individual samples, due to either the label noise or the lack of a strong visual signal.</p>
               </td>
             </tr>
       
@@ -100,65 +100,58 @@
             
             <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="img/ssgce.png" alt="clean-usnob" width="200" height="200">
+                <img src="img/segmenation.png" alt="clean-usnob" width="200" height="200">
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://drive.google.com/file/d/1a3yEbAH3awv9LsV-jasQ-G7nAWo4OGfk/view">
+                    <span class="papertitle">Image Caption Generator</span>
+                </a>
+                <br>
+                <p><strong>Guide</strong>: Amit Sethi</p><br>
+                <!-- <em>ECCV</em>, 2020 -->
+                <!-- <a href="https://drive.google.com/drive/u/2/folders/1gAGBBcCvoxS6j42aAnHhV3RcRw23NlbH">code</a> -->
+                <br>
+                <p>Built an Image caption generator on two benchmark i.e. datasets Flicker8 and MS COCO. Analysed and compared the performance of basic image caption generator and by adding Bahdanau attention module in it using BLEU and WMD metrics</p>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="img/caption.png" alt="clean-usnob" width="200" height="200">
               </td>
               <td width="75%" valign="middle">
                 <a href="https://drive.google.com/file/d/1a3yEbAH3awv9LsV-jasQ-G7nAWo4OGfk/view">
                     <span class="papertitle">Pixel-wise Segmentation of Right Ventricle of Heart </span>
                 </a>
                 <br>
-                <p><strong>Guide</strong>: Amit Sethi</p><br>
+                <p><strong>Guide</strong>: Prof. Amit Sethi</p><br>
                 <!-- <em>ECCV</em>, 2020 -->
-                <a href="https://drive.google.com/drive/u/2/folders/1gAGBBcCvoxS6j42aAnHhV3RcRw23NlbH">code</a>
+                <a href="https://drive.google.com/drive/u/2/folders/1gAGBBcCvoxS6j42aAnHhV3RcRw23NlbH">code</a> / 
+                <a href="https://drive.google.com/file/d/1a3yEbAH3awv9LsV-jasQ-G7nAWo4OGfk/view">report</a>
                 <br>
                 <p>Performed Binary Segmentation on MRI of heart to detect the right ventricle contour for medical diagnosis. Achieved the Dice score of 0.85 by comparison of various training losses, architecture & hyper-parameter</p>
               </td>
             </tr>
 
-            
+
             <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='samurai_image'>
-                    <img src='images/samurai_after.jpg' width="160"></div>
-                  <img src='images/samurai_before.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function samurai_start() {
-                    document.getElementById('samurai_image').style.opacity = "1";
-                  }
-
-                  function samurai_stop() {
-                    document.getElementById('samurai_image').style.opacity = "0";
-                  }
-                  samurai_stop()
-                </script>
+                <img src="img/modality.png" alt="clean-usnob" width="200" height="200">
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://markboss.me/publication/2022-samurai/">
-                  <span class="papertitle">SAMURAI: Shape And Material from Unconstrained Real-world Arbitrary Image Collections</span>
+              <td width="75%" valign="middle">
+                <a>
+                    <span class="papertitle">Modality Distillation </span>
                 </a>
                 <br>
-                <a href="https://markboss.me">Mark Boss</a>, 
-                <a href="">Andreas Engelhardt</a>, 
-                <a href="https://abhishekkar.info/">Abhishek Kar</a>, 
-                <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, 
-                <a href="https://deqings.github.io/">Deqing Sun</a>, 
-                <strong>Jonathan T. Barron</strong>,
-                <a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/computergrafik/computer-graphics/staff/prof-dr-ing-hendrik-lensch/">Hendrik P. A. Lensch</a>,
-                <a href="https://varunjampani.github.io">Varun Jampani</a>
+                <p><strong>Guide</strong>: Prof. Biplab Banerjee</p><br>
+                <!-- <em>ECCV</em>, 2020 -->
+                <!-- <a href="https://drive.google.com/drive/u/2/folders/1gAGBBcCvoxS6j42aAnHhV3RcRw23NlbH">code</a> -->
                 <br>
-                <em>NeurIPS</em>, 2022
-                <br>
-                <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                <a href="https://arxiv.org/abs/2205.15768">arXiv</a>
-                <p></p>
-                <p>
-  A joint optimization framework for estimating shape, BRDF, camera pose, and illumination from in-the-wild image collections.
-                </p>
+                <p>-Worked on the problem of modality distillation in the absence of bands for the purpose of remote sensing (RS) image classification by exploring the deep generative models. Devised a novel adversarial training capable of learning discriminative feature representation.</p>
               </td>
-            </tr>		
+            </tr>
+
 
             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
